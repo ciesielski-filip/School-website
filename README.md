@@ -1,1 +1,1 @@
-# School website with @hybert-ryzow
+# School website with @hubert-ryzow
