@@ -20,10 +20,11 @@ header {
     position: absolute;
     opacity: 0;
     &:checked + .switch {
-        background-color: red;
+        background-color: $white;
     }
     &:checked + .switch:before {
         left: 45px;
+        background-color: $darkgrey;
     }
 }
 .switch {

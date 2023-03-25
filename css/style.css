@@ -23,10 +23,11 @@ header {
   opacity: 0;
 }
 .checkbox_t:checked + .switch {
-  background-color: red;
+  background-color: #ffffff;
 }
 .checkbox_t:checked + .switch:before {
   left: 45px;
+  background-color: #252c33;
 }
 
 .switch {
