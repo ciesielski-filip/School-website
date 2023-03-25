@@ -1,17 +1,38 @@
-$darkgrey: #252c33;
-$white: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+$darkgrey: #041421;
+$darkblue: #042630;
+$blue: #4c7273;
+$lightblue: #86b9b0;
+$white: #d0d6d6;
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body {
+    background-color: $white;
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 header {
     display: flex;
+    width: 100vw;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    height: 80px;
+    background-color: $blue;
 }
 .logo {
-    width: 200px;
+    width: 100px;
 }
 .toggle {
     cursor: pointer;
