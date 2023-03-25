@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #d0d6d6;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -39,7 +39,6 @@ body {
     padding: 20px;
     height: 30px;
     text-decoration: none;
-    color: #041421;
     font-size: 13px;
   }
   .hamburger_menu {
@@ -86,7 +85,7 @@ body {
     width: 100%;
     height: 7px;
     border-radius: 10px;
-    background-color: #041421;
+    background-color: #2d3748;
   }
   span:nth-child(1) {
     transition: 0.4s;
@@ -133,7 +132,6 @@ body {
     padding: 20px;
     height: 30px;
     text-decoration: none;
-    color: #041421;
   }
   .hamburger_menu {
     display: flex;
@@ -178,7 +176,7 @@ body {
     width: 100%;
     height: 7px;
     border-radius: 10px;
-    background-color: #041421;
+    background-color: #2d3748;
   }
   span:nth-child(1) {
     transition: 0.4s;
@@ -210,12 +208,8 @@ body {
   }
   a {
     text-decoration: none;
-    color: #041421;
     font-weight: bold;
     font-size: 15px;
-  }
-  a:hover {
-    color: #042630;
   }
   label {
     scale: 0.9;
@@ -231,12 +225,8 @@ body {
   }
   a {
     text-decoration: none;
-    color: #041421;
     font-weight: bold;
     font-size: 20px;
-  }
-  a:hover {
-    color: #042630;
   }
   label {
     scale: 0.9;
@@ -244,7 +234,7 @@ body {
   }
 }
 h1 {
-  color: #041421;
+  color: #2d3748;
 }
 
 header {
@@ -253,7 +243,14 @@ header {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  background-color: #5aa7aa;
+  background-color: #d8d6d6;
+}
+
+a {
+  color: #4a5568;
+}
+a:hover {
+  color: #2b6cb0;
 }
 
 footer {
@@ -261,7 +258,8 @@ footer {
   align-items: center;
   justify-content: center;
   height: 50px;
-  background-color: #86b9b0;
+  color: #2d3748;
+  background-color: #d8d6d6;
 }
 
 .toggle {
@@ -273,15 +271,15 @@ footer {
   opacity: 0;
 }
 .checkbox_t:checked + .switch {
-  background-color: #d0d6d6;
+  background-color: #ffffff;
 }
 .checkbox_t:checked + .switch:before {
   left: 45px;
-  background-color: #041421;
+  background-color: #2d3748;
 }
 
 .switch {
-  background-color: #041421;
+  background-color: #2d3748;
   width: 70px;
   height: 30px;
   border-radius: 30px;
@@ -291,7 +289,7 @@ footer {
 
 .switch:before {
   content: "";
-  background-color: #d0d6d6;
+  background-color: #ffffff;
   width: 22px;
   height: 22px;
   position: absolute;
