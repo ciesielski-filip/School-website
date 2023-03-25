@@ -209,7 +209,8 @@ body {
   a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
+    padding: 8px;
   }
   label {
     scale: 0.9;
@@ -242,7 +243,7 @@ header {
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   background-color: #d8d6d6;
 }
 
