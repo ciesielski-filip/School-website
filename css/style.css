@@ -26,14 +26,14 @@ header {
   background-color: red;
 }
 .checkbox_t:checked + .switch:before {
-  left: 55px;
+  left: 45px;
 }
 
 .switch {
   background-color: #252c33;
-  width: 100px;
-  height: 50px;
-  border-radius: 50px;
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
   position: relative;
   transition: background 0.2s;
 }
@@ -41,8 +41,8 @@ header {
 .switch:before {
   content: "";
   background-color: #ffffff;
-  width: 42px;
-  height: 42px;
+  width: 22px;
+  height: 22px;
   position: absolute;
   border-radius: 50%;
   top: 4px;
