@@ -20,20 +20,35 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 140px;
+        margin-top: 210px;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin-top: 3px;
+        background-color: $blue;
+        padding: 20px;
+        height: 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: $white;
+    }
+    input[type="checkbox"]:checked ~ body{
+        background-color: blue;
+        
     }
 
 }
 header {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     height: 80px;
     gap: 30px;
     background-color: $blue;
-}
-.logo {
-    width: 100px;
 }
 .toggle {
     cursor: pointer;
