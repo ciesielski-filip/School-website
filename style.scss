@@ -1,3 +1,5 @@
+$darkgrey: #252c33;
+$white: #ffffff;
 * {
     margin: 0;
     padding: 0;
@@ -10,4 +12,36 @@ header {
 }
 .logo {
     width: 200px;
+}
+.toggle {
+    cursor: pointer;
+}
+.checkbox_t {
+    position: absolute;
+    opacity: 0;
+    &:checked + .switch {
+        background-color: red;
+    }
+    &:checked + .switch:before {
+        left: 55px;
+    }
+}
+.switch {
+    background-color: $darkgrey;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    transition: background 0.2s;
+}
+.switch:before {
+    content: "";
+    background-color: $white;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    transition: left 0.5s;
 }

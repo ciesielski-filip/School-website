@@ -13,3 +13,39 @@ header {
 .logo {
   width: 200px;
 }
+
+.toggle {
+  cursor: pointer;
+}
+
+.checkbox_t {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox_t:checked + .switch {
+  background-color: red;
+}
+.checkbox_t:checked + .switch:before {
+  left: 55px;
+}
+
+.switch {
+  background-color: #252c33;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.switch:before {
+  content: "";
+  background-color: #ffffff;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  transition: left 0.5s;
+}
