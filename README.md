@@ -1,1 +1,1 @@
-# School website with ![Discord](https://github.com/hubert-ryzow)
+# School website with ![hubert-ryzow](https://github.com/hubert-ryzow)
