@@ -77,6 +77,26 @@ a:hover {
   transition: left 0.5s;
 }
 
+.dark-mode body {
+  background-color: #2d3748;
+}
+.dark-mode header {
+  background-color: #283141;
+}
+.dark-mode h1 {
+  color: #f7fafc;
+}
+.dark-mode a {
+  color: #e2e8f0;
+}
+.dark-mode a:hover {
+  color: #81e6d9;
+}
+.dark-mode footer {
+  background-color: #283141;
+  color: #f7fafc;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 15px;

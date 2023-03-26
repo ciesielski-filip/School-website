@@ -79,6 +79,27 @@ a {
     left: 4px;
     transition: left 0.5s;
 }
+.dark-mode {
+    body {
+        background-color: $dark_d;
+    }
+    header {
+        background-color: $dark_second;
+    }
+    h1 {
+        color: $text_primary_dark;
+    }
+    a {
+        color: $text_secondary_dark;
+        &:hover {
+            color: $text_hover_dark;
+        }
+    }
+    footer {
+        background-color: $dark_second;
+        color: $text_primary_dark;
+    }
+}
 @media only screen and (max-width: 600px) { 
     h1 {
         font-size: 15px;
