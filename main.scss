@@ -20,9 +20,11 @@ $text_hover_dark: #81e6d9;
 body {
     background-color: $white_l;
     overflow-x: hidden;
+    transition: 0.3s;
 }
 h1 {
     color: $text_primary_light;
+    transition: 0.3s;
 }
 header {
     display: flex;
@@ -31,6 +33,7 @@ header {
     justify-content: center;
     gap: 20px;
     background-color: $white_second;
+    transition: 0.3s;
 }
 footer {
     display: flex;
@@ -39,11 +42,14 @@ footer {
     height: 50px;
     color: $text_primary_light;
     background-color: $white_second;
+    transition: 0.3s;
 }
 a {
     color: $text_secondary_light;
+    transition: 0.3s;
     &:hover {
         color: $text_hover_light;
+        transition: 0.3s;
     }
 }
 .toggle {
@@ -82,23 +88,33 @@ a {
 .dark-mode {
     body {
         background-color: $dark_d;
+        transition: 0.3s;
     }
     header {
         background-color: $dark_second;
+        transition: 0.3s;
     }
     h1 {
         color: $text_primary_dark;
+        transition: 0.3s;
     }
     a {
         color: $text_secondary_dark;
+        transition: 0.3s;
         &:hover {
             color: $text_hover_dark;
+            transition: 0.3s;
         }
     }
     footer {
         background-color: $dark_second;
         color: $text_primary_dark;
+        transition: 0.3s;
     }
+    span {
+        background-color: $text_primary_dark;
+    }
+    
 }
 @media only screen and (max-width: 600px) { 
     h1 {
@@ -180,6 +196,7 @@ a {
         }
         &:nth-child(2) {
             margin-top: 15px;
+            transition: 0.4s;
         }
         &:nth-child(3) {
             margin-top: 30px;
@@ -271,6 +288,7 @@ a {
         }
         &:nth-child(2) {
             margin-top: 15px;
+            transition: 0.4s;
         }
         &:nth-child(3) {
             margin-top: 30px;
