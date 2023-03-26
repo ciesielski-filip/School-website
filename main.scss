@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 //lightmode
-$white: #ffffff;
+$white_l: #ffffff;
 $white_second: #d8d6d6;
 $text_primary_light: #2d3748;
 $text_secondary_light: #4a5568;
 $text_hover_light: #2b6cb0;
 //darkmode
-$dark: #2d3748;
+$dark_d: #2d3748;
 $dark_second: #283141;
 $text_primary_dark: #f7fafc;
 $text_secondary_dark: #e2e8f0;
@@ -18,7 +18,7 @@ $text_hover_dark: #81e6d9;
     font-family: 'Montserrat';
 }
 body {
-    background-color: $white;
+    background-color: $white_l;
     overflow-x: hidden;
 }
 @media only screen and (max-width: 600px) { 
@@ -245,7 +245,7 @@ body {
     }
 }
 h1 {
-    color: $text_primary_light;
+    color: $text_primary;
 }
 header {
     display: flex;
@@ -276,7 +276,7 @@ footer {
     position: absolute;
     opacity: 0;
     &:checked + .switch {
-        background-color: $white;
+        background-color: $white_l;
     }
     &:checked + .switch:before {
         left: 45px;
@@ -293,7 +293,7 @@ footer {
 }
 .switch:before {
     content: "";
-    background-color: $white;
+    background-color: $white_l;
     width: 22px;
     height: 22px;
     position: absolute;
