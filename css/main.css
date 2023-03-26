@@ -126,6 +126,9 @@ a:hover {
 .dark-mode span {
   background-color: #f7fafc;
 }
+.dark-mode .loader {
+  border-top: 16px solid #f36259;
+}
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -351,7 +354,6 @@ a:hover {
     scale: 0.9;
     margin-left: 20px;
   }
-<<<<<<< HEAD
 }
 h1 {
   color: #2d3748;
@@ -420,18 +422,18 @@ footer {
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
+  border: 16px solid #d8d6d6;
+  border-top: 16px solid #2b6cb0;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 1.5s linear infinite;
   position: fixed;
   top: 50%;
   left: 50%;
   margin-top: -60px;
   margin-left: -60px;
-  z-index: 9999;
+  z-index: 1;
 }
 
 @keyframes spin {
@@ -441,6 +443,4 @@ footer {
   100% {
     transform: rotate(360deg);
   }
-=======
->>>>>>> f50a89ddf5828c65af43e4fc46371fe0819de912
 }/*# sourceMappingURL=main.css.map */
