@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 //lightmode
-$white: #ffffff;
+$white_l: #ffffff;
 $white_second: #d8d6d6;
 $text_primary_light: #2d3748;
 $text_secondary_light: #4a5568;
 $text_hover_light: #2b6cb0;
 //darkmode
-$dark: #2d3748;
+$dark_d: #2d3748;
 $dark_second: #283141;
 $text_primary_dark: #f7fafc;
 $text_secondary_dark: #e2e8f0;
-$text_hover_dark: #81e6d9;
+$text_hover_dark: #f36259;
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +18,117 @@ $text_hover_dark: #81e6d9;
     font-family: 'Montserrat';
 }
 body {
-    background-color: $white;
+    background-color: $white_l;
     overflow-x: hidden;
+    transition: 0.2s;
+}
+h1 {
+    color: $text_primary_light;
+    transition: 0.2s;
+}
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: $white_second;
+    transition: 0.2s;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: $text_primary_light;
+    background-color: $white_second;
+    transition: 0.2s;
+}
+a {
+    color: $text_secondary_light;
+    transition: 0.2s;
+    &:hover {
+        color: $text_hover_light;
+        transition: 0.2s;
+    }
+}
+.bgactive {
+    background-color: $text_hover_light;
+    color: $text_primary_dark;
+    &:hover {
+        color: $text_primary_dark;
+    }
+}
+.toggle {
+    cursor: pointer;
+}
+.checkbox_t {
+    position: absolute;
+    opacity: 0;
+    &:checked + .switch {
+        background-color: $white_l;
+    }
+    &:checked + .switch:before {
+        left: 45px;
+        background-color: $text_primary_light;
+    }
+}
+.switch {
+    background-color: $text_primary_light;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    transition: background 0.2s;
+}
+.switch:before {
+    content: "";
+    background-color: $white_l;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    transition: left 0.5s;
+}
+.dark-mode {
+    body {
+        background-color: $dark_d;
+        transition: 0.2s;
+    }
+    header {
+        background-color: $dark_second;
+        transition: 0.2s;
+    }
+    h1 {
+        color: $text_primary_dark;
+        transition: 0.2s;
+    }
+    a {
+        color: $text_secondary_dark;
+        transition: 0.2s;
+        &:hover {
+            color: $text_hover_dark;
+            transition: 0.2s;
+        }
+    }
+    .bgactive {
+        background-color: $text_hover_dark;
+        color: $text_primary_light;
+        &:hover {
+            color: $text_primary_light;
+        }
+    }
+    footer {
+        background-color: $dark_second;
+        color: $text_primary_dark;
+        transition: 0.2s;
+    }
+    span {
+        background-color: $text_primary_dark;
+    }
+    
 }
 @media only screen and (max-width: 600px) { 
     h1 {
@@ -101,6 +210,7 @@ body {
         }
         &:nth-child(2) {
             margin-top: 15px;
+            transition: 0.4s;
         }
         &:nth-child(3) {
             margin-top: 30px;
@@ -192,6 +302,7 @@ body {
         }
         &:nth-child(2) {
             margin-top: 15px;
+            transition: 0.4s;
         }
         &:nth-child(3) {
             margin-top: 30px;
@@ -244,6 +355,7 @@ body {
         margin-left: 20px;
     }
 }
+<<<<<<< HEAD
 h1 {
     color: $text_primary_light;
 }
@@ -322,3 +434,5 @@ footer {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+=======
+>>>>>>> f50a89ddf5828c65af43e4fc46371fe0819de912

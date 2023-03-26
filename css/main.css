@@ -9,6 +9,122 @@
 body {
   background-color: #ffffff;
   overflow-x: hidden;
+  transition: 0.2s;
+}
+
+h1 {
+  color: #2d3748;
+  transition: 0.2s;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #d8d6d6;
+  transition: 0.2s;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: #2d3748;
+  background-color: #d8d6d6;
+  transition: 0.2s;
+}
+
+a {
+  color: #4a5568;
+  transition: 0.2s;
+}
+a:hover {
+  color: #2b6cb0;
+  transition: 0.2s;
+}
+
+.bgactive {
+  background-color: #2b6cb0;
+  color: #f7fafc;
+}
+.bgactive:hover {
+  color: #f7fafc;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.checkbox_t {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox_t:checked + .switch {
+  background-color: #ffffff;
+}
+.checkbox_t:checked + .switch:before {
+  left: 45px;
+  background-color: #2d3748;
+}
+
+.switch {
+  background-color: #2d3748;
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.switch:before {
+  content: "";
+  background-color: #ffffff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  transition: left 0.5s;
+}
+
+.dark-mode body {
+  background-color: #2d3748;
+  transition: 0.2s;
+}
+.dark-mode header {
+  background-color: #283141;
+  transition: 0.2s;
+}
+.dark-mode h1 {
+  color: #f7fafc;
+  transition: 0.2s;
+}
+.dark-mode a {
+  color: #e2e8f0;
+  transition: 0.2s;
+}
+.dark-mode a:hover {
+  color: #f36259;
+  transition: 0.2s;
+}
+.dark-mode .bgactive {
+  background-color: #f36259;
+  color: #2d3748;
+}
+.dark-mode .bgactive:hover {
+  color: #2d3748;
+}
+.dark-mode footer {
+  background-color: #283141;
+  color: #f7fafc;
+  transition: 0.2s;
+}
+.dark-mode span {
+  background-color: #f7fafc;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,6 +208,7 @@ body {
   }
   span:nth-child(2) {
     margin-top: 15px;
+    transition: 0.4s;
   }
   span:nth-child(3) {
     margin-top: 30px;
@@ -183,6 +300,7 @@ body {
   }
   span:nth-child(2) {
     margin-top: 15px;
+    transition: 0.4s;
   }
   span:nth-child(3) {
     margin-top: 30px;
@@ -233,6 +351,7 @@ body {
     scale: 0.9;
     margin-left: 20px;
   }
+<<<<<<< HEAD
 }
 h1 {
   color: #2d3748;
@@ -322,4 +441,6 @@ footer {
   100% {
     transform: rotate(360deg);
   }
+=======
+>>>>>>> f50a89ddf5828c65af43e4fc46371fe0819de912
 }/*# sourceMappingURL=main.css.map */
