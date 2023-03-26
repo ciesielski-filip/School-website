@@ -10,3 +10,8 @@ checkbox_t.addEventListener('change', function() {
     document.documentElement.classList.toggle("dark-mode");
     localStorage.setItem("darkModeEnabled", checkbox_t.checked);
 });
+
+window.addEventListener("load", function() {
+    let loader = document.querySelector(".loader");
+    loader.style.display = "none";
+});
