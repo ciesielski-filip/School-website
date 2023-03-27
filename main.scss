@@ -52,6 +52,13 @@ a {
         transition: 0.3s;
     }
 }
+.bgactive {
+    background-color: $text_hover_light;
+    color: $text_primary_dark;
+    &:hover {
+        color: $text_primary_dark;
+    }
+}
 .toggle {
     cursor: pointer;
 }
@@ -104,6 +111,13 @@ a {
         &:hover {
             color: $text_hover_dark;
             transition: 0.3s;
+        }
+    }
+    .bgactive {
+        background-color: $text_hover_dark;
+        color: $text_primary_light;
+        &:hover {
+            color: $text_primary_light;
         }
     }
     footer {

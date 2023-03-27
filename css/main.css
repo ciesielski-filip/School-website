@@ -46,6 +46,14 @@ a:hover {
   transition: 0.3s;
 }
 
+.bgactive {
+  background-color: #2b6cb0;
+  color: #f7fafc;
+}
+.bgactive:hover {
+  color: #f7fafc;
+}
+
 .toggle {
   cursor: pointer;
 }
@@ -102,6 +110,13 @@ a:hover {
 .dark-mode a:hover {
   color: #81e6d9;
   transition: 0.3s;
+}
+.dark-mode .bgactive {
+  background-color: #81e6d9;
+  color: #2d3748;
+}
+.dark-mode .bgactive:hover {
+  color: #2d3748;
 }
 .dark-mode footer {
   background-color: #283141;
