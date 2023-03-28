@@ -9,12 +9,12 @@
 body {
   background-color: #ffffff;
   overflow-x: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 h1 {
   color: #2d3748;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
   justify-content: center;
   gap: 20px;
   background-color: #d8d6d6;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 footer {
@@ -34,16 +34,16 @@ footer {
   height: 50px;
   color: #2d3748;
   background-color: #d8d6d6;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 a {
   color: #4a5568;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 a:hover {
   color: #2b6cb0;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .bgactive {
@@ -93,26 +93,26 @@ a:hover {
 
 .dark-mode body {
   background-color: #2d3748;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .dark-mode header {
   background-color: #283141;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .dark-mode h1 {
   color: #f7fafc;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .dark-mode a {
   color: #e2e8f0;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .dark-mode a:hover {
-  color: #81e6d9;
-  transition: 0.3s;
+  color: #f36259;
+  transition: 0.2s;
 }
 .dark-mode .bgactive {
-  background-color: #81e6d9;
+  background-color: #f36259;
   color: #2d3748;
 }
 .dark-mode .bgactive:hover {
@@ -121,7 +121,7 @@ a:hover {
 .dark-mode footer {
   background-color: #283141;
   color: #f7fafc;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .dark-mode span {
   background-color: #f7fafc;
