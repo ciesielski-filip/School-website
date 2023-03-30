@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","sourcesContent":[]}
+{"version":3,"sourceRoot":"","sources":["..\\scss\\o_nas.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA;;AACA;EACI;;AAEJ;EACI","sourcesContent":[".container {\r\n    display: grid;\r\n    grid-template-columns: auto auto;\r\n    gap: 30px;\r\n}\r\n.block {\r\n    background-color: aqua;\r\n    width: 100px;\r\n    height: 100px;\r\n    &:nth-child(2) {\r\n        width: 200px;\r\n    }\r\n    &:nth-child(3) {\r\n        width: 200px;\r\n    }\r\n}"]}

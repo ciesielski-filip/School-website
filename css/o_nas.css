@@ -1,1 +1,17 @@
-/*# sourceMappingURL=o_nas.css.map */
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.block {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+.block:nth-child(2) {
+  width: 200px;
+}
+.block:nth-child(3) {
+  width: 200px;
+}/*# sourceMappingURL=o_nas.css.map */
