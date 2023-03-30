@@ -416,7 +416,6 @@ footer {
     left: 4px;
     transition: left 0.5s;
 }
-
 .loader {
     border: 16px solid $white_second;
     border-top: 16px solid $text_hover_light;
@@ -431,7 +430,6 @@ footer {
     margin-left: -60px;
     z-index: 1;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
