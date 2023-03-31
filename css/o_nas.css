@@ -23,12 +23,13 @@
 }
 .block:nth-child(1)::before {
   content: "";
-  display: none;
+  display: block;
   position: absolute;
   width: 620px;
   height: 620px;
   border-radius: 30px;
-  background-color: #f36259;
+  background-color: aqua;
+  opacity: 1;
 }
 .block:nth-child(2) {
   grid-area: 2/3/4/4;

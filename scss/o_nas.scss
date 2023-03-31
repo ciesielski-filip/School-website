@@ -31,12 +31,13 @@ $text_hover_dark: #f36259;
         grid-area: 1/1/3/2;
         &::before {
             content: '';
-            display: none;
+            display: block;
             position: absolute;
             width: 620px;
             height: 620px;
             border-radius: 30px;
-            background-color: $text_hover_dark;
+            background-color: aqua;
+            opacity: 1;
         }
     }
     &:nth-child(2) {
