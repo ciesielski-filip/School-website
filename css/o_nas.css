@@ -23,7 +23,7 @@
 }
 .block:nth-child(1)::before {
   content: "";
-  display: block;
+  display: none;
   position: absolute;
   width: 620px;
   height: 620px;
@@ -46,6 +46,11 @@
 .block img {
   width: 100%;
   filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.show {
+  display: block;
+  background-color: chocolate;
 }
 
 .dark-mode .block {

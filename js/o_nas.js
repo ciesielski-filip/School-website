@@ -8,3 +8,8 @@
 // })
 
 
+let block1 = document.querySelector('.block1')
+
+block1.addEventListener("click", function() {
+    console.log("tak")
+})

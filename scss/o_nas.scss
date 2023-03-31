@@ -31,7 +31,7 @@ $text_hover_dark: #f36259;
         grid-area: 1/1/3/2;
         &::before {
             content: '';
-            display: block;
+            display: none;
             position: absolute;
             width: 620px;
             height: 620px;
@@ -56,6 +56,10 @@ $text_hover_dark: #f36259;
         width: 100%;
         filter: drop-shadow(0 0 10px $white_l);
     }
+}
+.show {
+    display: block;
+    background-color: chocolate;
 }
 .dark-mode {
     .block {
