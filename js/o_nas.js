@@ -6,3 +6,8 @@
 //         block.style.opacity = 1
 //     })
 // })
+
+let block1 = document.getElementById("block1")
+block1.addEventListener("click", function() {
+    console.log("tak")
+})
