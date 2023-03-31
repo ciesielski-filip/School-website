@@ -21,6 +21,10 @@ body {
     background-color: $white_l;
     overflow-x: hidden;
     transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 h1 {
     color: $text_primary_light;
@@ -39,10 +43,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    min-height: 50px;
     color: $text_primary_light;
     background-color: $white_second;
     transition: 0.2s;
+}
+.container {
+    flex: 1;
 }
 a {
     color: $text_secondary_light;
@@ -91,6 +98,24 @@ a {
     top: 4px;
     left: 4px;
     transition: left 0.5s;
+}
+.loader {
+    border: 16px solid $white_second;
+    border-top: 16px solid $text_hover_light;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    z-index: 1;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 .dark-mode {
     body {
@@ -356,81 +381,4 @@ a {
         scale: 0.9;
         margin-left: 20px;
     }
-}
-
-h1 {
-    color: $text_primary_light;
-}
-header {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: $white_second;
-}
-a {
-    color: $text_secondary_light;
-    &:hover {
-        color: $text_hover_light;
-    }
-}
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    color: $text_primary_light;
-    background-color: $white_second;
-}
-.toggle {
-    cursor: pointer;
-}
-.checkbox_t {
-    position: absolute;
-    opacity: 0;
-    &:checked + .switch {
-        background-color: $white_l;
-    }
-    &:checked + .switch:before {
-        left: 45px;
-        background-color: $text_primary_light;
-    }
-}
-.switch {
-    background-color: $text_primary_light;
-    width: 70px;
-    height: 30px;
-    border-radius: 30px;
-    position: relative;
-    transition: background 0.2s;
-}
-.switch:before {
-    content: "";
-    background-color: $white_l;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    border-radius: 50%;
-    top: 4px;
-    left: 4px;
-    transition: left 0.5s;
-}
-.loader {
-    border: 16px solid $white_second;
-    border-top: 16px solid $text_hover_light;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 1.5s linear infinite;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -60px;
-    margin-left: -60px;
-    z-index: 1;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
