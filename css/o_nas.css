@@ -63,9 +63,11 @@
   background-color: brown;
   position: absolute;
   opacity: 0;
+  transition: 0.5s;
 }
 
 .show-content {
+  transition: 0.5s;
   opacity: 1;
   z-index: 2;
 }

@@ -7,21 +7,16 @@
 //     })
 // })
 
-
-let block1 = document.querySelector(".block1")
-let content1 = document.querySelector(".content:nth-child(1)")
-block1.addEventListener("click", function() {
-    content1.classList.add("show-content")
-})
-content1.addEventListener("click", function() {
-    content1.classList.remove("show-content")
-})
-
-let block2 = document.querySelector(".block2")
-let content2 = document.querySelector(".content:nth-child(2)")
-block2.addEventListener("click", function() {
-    content2.classList.add("show-content")
-})
-content2.addEventListener("click", function() {
-    content2.classList.remove("show-content")
-})
+function toggleContent(block, content) {
+    block.addEventListener("click", function() {
+        content.classList.add("show-content")
+    })
+    content.addEventListener("click", function() {
+        content.classList.remove("show-content")
+    })
+}
+toggleContent(document.querySelector(".block1"), document.querySelector(".content1"))
+toggleContent(document.querySelector(".block2"), document.querySelector(".content2"))
+toggleContent(document.querySelector(".block3"), document.querySelector(".content3"))
+toggleContent(document.querySelector(".block4"), document.querySelector(".content4"))
+toggleContent(document.querySelector(".block5"), document.querySelector(".content5"))
