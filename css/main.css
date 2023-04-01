@@ -29,6 +29,9 @@ header {
   gap: 20px;
   background-color: #d8d6d6;
   transition: 0.2s;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 footer {
