@@ -8,8 +8,13 @@
 // })
 
 
-let block1 = document.querySelector('.block1')
+let block1 = document.querySelector(".block1")
+let content1 = document.querySelector(".content1")
 
 block1.addEventListener("click", function() {
-    console.log("tak")
+    content1.classList.add("show-content")
+})
+
+content1.addEventListener("click", function() {
+    content1.classList.remove("show-content")
 })
