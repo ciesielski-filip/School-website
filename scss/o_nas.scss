@@ -73,6 +73,37 @@ $text_hover_dark: #f36259;
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    .close {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        .span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background-color: black;
+            border-radius: 10px;
+            &:nth-child(1) {
+                margin-top: 5px;
+                transform: rotate(45deg);
+                transform-origin: 0% 0%;
+                margin-left: 10px;
+            }
+            &:nth-child(2) {
+                margin-top: 32px;
+                transform: rotate(-45deg);
+                transform-origin: 0% 100%;
+                margin-left: 10px;
+            }
+        }
+    }
 }
 .show-content {
     transition: 0.5s;
