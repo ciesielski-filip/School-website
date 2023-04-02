@@ -68,7 +68,8 @@
   display: flex;
   flex-direction: column;
 }
-.content .close {
+
+.close {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -76,7 +77,12 @@
   height: 40px;
   margin-left: auto;
 }
-.content .close .span {
+.close:active {
+  scale: 1.1;
+  transition: 0.2s;
+}
+
+.span {
   display: block;
   position: absolute;
   width: 100%;
@@ -84,13 +90,13 @@
   background-color: black;
   border-radius: 10px;
 }
-.content .close .span:nth-child(1) {
+.span:nth-child(1) {
   margin-top: 5px;
   transform: rotate(45deg);
   transform-origin: 0% 0%;
   margin-left: 10px;
 }
-.content .close .span:nth-child(2) {
+.span:nth-child(2) {
   margin-top: 32px;
   transform: rotate(-45deg);
   transform-origin: 0% 100%;
