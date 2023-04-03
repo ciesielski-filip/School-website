@@ -15,6 +15,7 @@ function toggleContent(block, content, close) {
         content.classList.remove("show-content")
     })
 }
+
 toggleContent(document.querySelector(".block1"), document.querySelector(".content1"), document.querySelector(".close1"))
 toggleContent(document.querySelector(".block2"), document.querySelector(".content2"), document.querySelector(".close2"))
 toggleContent(document.querySelector(".block3"), document.querySelector(".content3"), document.querySelector(".close3"))
