@@ -7,17 +7,22 @@
 //     })
 // })
 
-function toggleContent(block, content, close) {
+function toggleContent(block, content, close, blur) {
     block.addEventListener("click", function() {
         content.classList.add("show-content")
+        blur.classList.add("blur-active")
     })
     close.addEventListener("click", function() {
         content.classList.remove("show-content")
+        blur.classList.remove("blur-active")
     })
 }
 
-toggleContent(document.querySelector(".block1"), document.querySelector(".content1"), document.querySelector(".close1"))
-toggleContent(document.querySelector(".block2"), document.querySelector(".content2"), document.querySelector(".close2"))
-toggleContent(document.querySelector(".block3"), document.querySelector(".content3"), document.querySelector(".close3"))
-toggleContent(document.querySelector(".block4"), document.querySelector(".content4"), document.querySelector(".close4"))
-toggleContent(document.querySelector(".block5"), document.querySelector(".content5"), document.querySelector(".close5"))
+const block = document.querySelectorAll(".block")
+const contents = document.querySelectorAll(".content")
+const closes = document.querySelectorAll(".close")
+const blur = document.querySelector(".blur")
+
+block.forEach((block, index) => {
+    toggleContent(block, contents[index], closes[index], blur)
+})

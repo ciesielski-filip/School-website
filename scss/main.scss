@@ -19,12 +19,13 @@ $text_hover_dark: #f36259;
 }
 body {
     background-color: $white_l;
-    overflow-x: hidden;
     transition: 0.2s;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    margin: 0;
 }
 h1 {
     color: $text_primary_light;
@@ -46,10 +47,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: 50px;
     color: $text_primary_light;
     background-color: $white_second;
     transition: 0.2s;
+    z-index: 5;
 }
 .container {
     flex: 1;
