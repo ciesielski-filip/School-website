@@ -7,23 +7,24 @@
 //     })
 // })
 
-function toggleContent(block, content, close, blur) {
+function toggleContent(block, content, close, container) {
     block.addEventListener("click", function() {
         content.classList.add("show-content")
-        content.classList.add("margin")
+        content.classList.add("margin_c")
+        container.classList.add("margin_c")
     })
     close.addEventListener("click", function() {
         content.classList.remove("show-content")
-        blur.classList.remove("blur-active")
-        content.classList.remove("margin")
+        content.classList.remove("margin_c")
+        container.classList.remove("margin_c")
     })
 }
 
 const block = document.querySelectorAll(".block")
 const contents = document.querySelectorAll(".content")
 const closes = document.querySelectorAll(".close")
-const blur = document.querySelector(".blur")
+const container = document.querySelector(".container_cards")
 
 block.forEach((block, index) => {
-    toggleContent(block, contents[index], closes[index], blur)
+    toggleContent(block, contents[index], closes[index], container)
 })
