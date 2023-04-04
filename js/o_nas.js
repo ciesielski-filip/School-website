@@ -10,11 +10,12 @@
 function toggleContent(block, content, close, blur) {
     block.addEventListener("click", function() {
         content.classList.add("show-content")
-        document.body.style.background = rgb(0, 0, 0)
+        content.classList.add("margin")
     })
     close.addEventListener("click", function() {
         content.classList.remove("show-content")
         blur.classList.remove("blur-active")
+        content.classList.remove("margin")
     })
 }
 
