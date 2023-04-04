@@ -17,14 +17,17 @@ $text_hover_dark: #f36259;
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
+    background-color: $white_l;
+    overflow-x: hidden;
+    transition: 0.2s;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    background-color: $white_l;
-    transition: 0.2s;
+    margin: 0;
 }
 h1 {
     color: $text_primary_light;
@@ -51,12 +54,11 @@ footer {
     color: $text_primary_light;
     background-color: $white_second;
     transition: 0.2s;
-    z-index: 5;
 }
 .container {
     flex: 1;
 }
-a {
+.nav a {
     color: $text_secondary_light;
     transition: 0.2s;
     &:hover {
@@ -135,7 +137,7 @@ a {
         color: $text_primary_dark;
         transition: 0.2s;
     }
-    a {
+    .nav a {
         color: $text_secondary_dark;
         transition: 0.2s;
         &:hover {
@@ -182,7 +184,7 @@ a {
         transform-origin: 50% 0;
         transition: transform 0.5s ease-in-out;
     }
-    a {
+    .nav a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -276,7 +278,7 @@ a {
         transform-origin: 50% 0;
         transition: transform 0.5s ease-in-out;
     }
-    a {
+    .nav a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -359,7 +361,7 @@ a {
         display: flex;
         gap: 25px;
     }
-    a {
+    .nav a {
         text-decoration: none;
         font-weight: bold;
         font-size: 14px;
@@ -377,7 +379,7 @@ a {
     header {
         height: 80px;
     }
-    a {
+    .nav a {
         text-decoration: none;
         font-weight: bold;
         font-size: 20px;

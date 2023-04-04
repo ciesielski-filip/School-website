@@ -6,14 +6,18 @@
   font-family: "Montserrat";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.2s;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background-color: #ffffff;
-  transition: 0.2s;
+  margin: 0;
 }
 
 h1 {
@@ -43,18 +47,17 @@ footer {
   color: #2d3748;
   background-color: #d8d6d6;
   transition: 0.2s;
-  z-index: 5;
 }
 
 .container {
   flex: 1;
 }
 
-a {
+.nav a {
   color: #4a5568;
   transition: 0.2s;
 }
-a:hover {
+.nav a:hover {
   color: #2b6cb0;
   transition: 0.2s;
 }
@@ -139,11 +142,11 @@ a:hover {
   color: #f7fafc;
   transition: 0.2s;
 }
-.dark-mode a {
+.dark-mode .nav a {
   color: #e2e8f0;
   transition: 0.2s;
 }
-.dark-mode a:hover {
+.dark-mode .nav a:hover {
   color: #f36259;
   transition: 0.2s;
 }
@@ -186,7 +189,7 @@ a:hover {
     transform-origin: 50% 0;
     transition: transform 0.5s ease-in-out;
   }
-  a {
+  .nav a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +283,7 @@ a:hover {
     transform-origin: 50% 0;
     transition: transform 0.5s ease-in-out;
   }
-  a {
+  .nav a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +366,7 @@ a:hover {
     display: flex;
     gap: 25px;
   }
-  a {
+  .nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -381,7 +384,7 @@ a:hover {
   header {
     height: 80px;
   }
-  a {
+  .nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
