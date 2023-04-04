@@ -47,6 +47,9 @@ footer {
   color: #2d3748;
   background-color: #d8d6d6;
   transition: 0.2s;
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
 }
 
 .container {
