@@ -17,6 +17,9 @@ $text_hover_dark: #f36259;
     .content {
         background-color: $text_hover_dark;
     }
+    .span {
+        background-color: $dark_second;
+    }
 }
 .blur {
     position: sticky;
@@ -111,7 +114,7 @@ $text_hover_dark: #f36259;
     position: absolute;
     width: 100%;
     height: 5px;
-    background-color: black;
+    background-color: $white_second;
     border-radius: 10px;
     &:nth-child(1) {
         margin-top: 5px;

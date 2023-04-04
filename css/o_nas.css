@@ -4,6 +4,9 @@
 .dark-mode .content {
   background-color: #f36259;
 }
+.dark-mode .span {
+  background-color: #283141;
+}
 
 .blur {
   position: sticky;
@@ -106,7 +109,7 @@
   position: absolute;
   width: 100%;
   height: 5px;
-  background-color: black;
+  background-color: #d8d6d6;
   border-radius: 10px;
 }
 .span:nth-child(1) {
