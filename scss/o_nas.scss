@@ -107,6 +107,13 @@ $text_hover_dark: #f36259;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    &:nth-child(2) {
+        p {
+            padding: 10px;
+            color: $white_l;
+            font-size: 20px;
+        }
+    }
     &:nth-child(5) {
         img {
             max-width: 100%;
@@ -185,6 +192,11 @@ $text_hover_dark: #f36259;
     .content {
         width: 100%;
         height: auto;
+        &:nth-child(2) {
+            p {
+                font-size: 15px;
+            }
+        }
         &:nth-child(5) {
             img {
                 max-width: 100%;
