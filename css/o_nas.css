@@ -3,7 +3,10 @@
 }
 .dark-mode .content {
   background-color: #f36259;
-  border: 3px solid #f7fafc;
+  border: 3px solid #283141;
+}
+.dark-mode .content p {
+  color: #2d3748;
 }
 .dark-mode .span {
   background-color: #283141;
@@ -93,7 +96,7 @@
   width: 660px;
   height: 660px;
   border-radius: 30px;
-  border: 3px solid #2d3748;
+  border: 3px solid #d8d6d6;
   background-color: #2b6cb0;
   position: absolute;
   opacity: 0;
@@ -102,9 +105,11 @@
   display: flex;
   flex-direction: column;
 }
+.content p {
+  color: #ffffff;
+}
 .content:nth-child(2) p {
   padding: 10px;
-  color: #ffffff;
   font-size: 20px;
 }
 .content:nth-child(5) img {

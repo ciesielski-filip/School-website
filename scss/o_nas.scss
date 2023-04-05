@@ -16,7 +16,10 @@ $text_hover_dark: #f36259;
     }
     .content {
         background-color: $text_hover_dark;
-        border: 3px solid $text_primary_dark;
+        border: 3px solid $dark_second;
+        p {
+            color: $dark_d;
+        }
     }
     .span {
         background-color: $dark_second;
@@ -99,7 +102,7 @@ $text_hover_dark: #f36259;
     width: 660px;
     height: 660px;
     border-radius: 30px;
-    border: 3px solid $text_primary_light;
+    border: 3px solid $white_second;
     background-color: $text_hover_light;
     position: absolute;
     opacity: 0;
@@ -107,10 +110,12 @@ $text_hover_dark: #f36259;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    p {
+        color: $white_l;
+    }
     &:nth-child(2) {
         p {
             padding: 10px;
-            color: $white_l;
             font-size: 20px;
         }
     }
