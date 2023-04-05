@@ -115,11 +115,7 @@
 .content p {
   color: #ffffff;
 }
-.content:nth-child(2) p {
-  padding: 10px;
-  font-size: 20px;
-}
-.content:nth-child(3) p {
+.content:nth-child(2) p, .content:nth-child(3) p {
   padding: 10px;
   font-size: 20px;
 }

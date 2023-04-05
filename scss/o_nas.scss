@@ -120,13 +120,7 @@ $text_hover_dark: #f36259;
     p {
         color: $white_l;
     }
-    &:nth-child(2) {
-        p {
-            padding: 10px;
-            font-size: 20px;
-        }
-    }
-    &:nth-child(3) {
+    &:nth-child(2), &:nth-child(3) {
         p {
             padding: 10px;
             font-size: 20px;
