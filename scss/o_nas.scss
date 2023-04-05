@@ -82,6 +82,13 @@ $text_hover_dark: #f36259;
             height: 100%;
         }
     }
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        scale: 1.02;
+        transition: all 0.2s;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +146,9 @@ $text_hover_dark: #f36259;
         scale: 1.1;
         transition: 0.2s;
     }
+    &:hover {
+        cursor: pointer;
+    }
 }    
 .span {
     display: block;
@@ -164,9 +174,6 @@ $text_hover_dark: #f36259;
     transition: 0.5s;
     opacity: 1;
     z-index: 4;
-}
-.margin_c {
-    margin-top: 150px;
 }
 @keyframes pop-up {
     0% {
@@ -209,14 +216,6 @@ $text_hover_dark: #f36259;
                 height: auto;
                 width: auto;
             }
-        }
-    }
-}
-@media only screen and (min-width: 768px) {
-    .close {
-        &:active {
-            transform: rotate(90deg);
-            transition: 0.3s;
         }
     }
 }

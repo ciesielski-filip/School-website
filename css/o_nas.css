@@ -81,6 +81,13 @@
   width: auto;
   height: 100%;
 }
+.block:hover {
+  cursor: pointer;
+}
+.block:active {
+  scale: 1.02;
+  transition: all 0.2s;
+}
 
 .content_cards {
   display: flex;
@@ -131,6 +138,9 @@
   scale: 1.1;
   transition: 0.2s;
 }
+.close:hover {
+  cursor: pointer;
+}
 
 .span {
   display: block;
@@ -157,10 +167,6 @@
   transition: 0.5s;
   opacity: 1;
   z-index: 4;
-}
-
-.margin_c {
-  margin-top: 150px;
 }
 
 @keyframes pop-up {
@@ -201,11 +207,5 @@
     max-height: 100%;
     height: auto;
     width: auto;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .close:active {
-    transform: rotate(90deg);
-    transition: 0.3s;
   }
 }/*# sourceMappingURL=o_nas.css.map */
