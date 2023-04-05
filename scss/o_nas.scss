@@ -79,6 +79,12 @@ $text_hover_dark: #f36259;
             height: 100%;
         }
     }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white_l;
+    font-size: 20px;
+    font-weight: bold;
 }
 .content_cards {
     display: flex;
@@ -172,9 +178,6 @@ $text_hover_dark: #f36259;
     }
     .block {
         height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .content_cards {
         width: 80%;
