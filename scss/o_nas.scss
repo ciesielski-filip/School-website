@@ -34,6 +34,7 @@ $text_hover_dark: #f36259;
 }
 .blur-active {
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     z-index: 2;
     opacity: 1;
 }
