@@ -201,7 +201,10 @@
     height: auto;
   }
   .content:nth-child(2) p {
-    font-size: 18px;
+    font-size: 3.7vw;
+  }
+  .content:nth-child(3) p {
+    font-size: 15px;
   }
   .content:nth-child(5) img {
     max-width: 100%;

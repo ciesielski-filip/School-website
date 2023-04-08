@@ -207,7 +207,12 @@ $text_hover_dark: #f36259;
         height: auto;
         &:nth-child(2) {
             p {
-                font-size: 18px;
+                font-size: 3.7vw;
+            }
+        }
+        &:nth-child(3) {
+            p {
+                font-size: 15px;
             }
         }
         &:nth-child(5) {
