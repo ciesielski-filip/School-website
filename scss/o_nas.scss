@@ -219,7 +219,12 @@ $text_hover_dark: #f36259;
             }
         }
         .close {
-            scale: 0.6;
+            left: 20px;
+            margin-bottom: 20px;
+            scale: 0.7;
+        }
+        &::-webkit-scrollbar {
+            width: 1em;
         }
     }
 }
