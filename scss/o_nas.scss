@@ -244,7 +244,9 @@ $text_hover_dark: #f36259;
     .content {
         width: 100%;
         height: auto;
-        font-size: 13px;
+        max-height: 100vh;
+        overflow: scroll;
+        overflow-x: hidden;
         &:nth-child(5) {
             img {
                 max-width: 100%;
@@ -255,6 +257,9 @@ $text_hover_dark: #f36259;
         }
         .close {
             scale: 0.8;
+        }
+        &::-webkit-scrollbar {
+            width: 0.5em;
         }
     }
 }
