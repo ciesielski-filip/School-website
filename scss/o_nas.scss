@@ -13,6 +13,7 @@ $text_hover_dark: #f36259;
 .dark-mode {
     .block {
         background-color: $text_hover_dark;
+        color: $dark_d;
     }
     .content {
         background-color: $text_hover_dark;
@@ -95,7 +96,7 @@ $text_hover_dark: #f36259;
     justify-content: center;
     color: $white_l;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .content_cards {
     display: flex;
