@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #ffffff;
+  overflow: scroll;
   overflow-x: hidden;
   transition: 0.2s;
   display: flex;
