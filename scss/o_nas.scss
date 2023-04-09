@@ -115,7 +115,7 @@ $text_hover_dark: #f36259;
     position: absolute;
     opacity: 0;
     transition: 0.5s;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     p {
@@ -206,16 +206,10 @@ $text_hover_dark: #f36259;
     .content {
         width: 100%;
         height: auto;
-        &:nth-child(2) {
-            p {
-                font-size: 3.7vw;
-            }
-        }
-        &:nth-child(3) {
-            p {
-                font-size: 15px;
-            }
-        }
+        max-height: 100vh;
+        overflow: scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
         &:nth-child(5) {
             img {
                 max-width: 100%;
@@ -223,6 +217,9 @@ $text_hover_dark: #f36259;
                 height: auto;
                 width: auto;
             }
+        }
+        .close {
+            scale: 0.6;
         }
     }
 }
@@ -243,16 +240,7 @@ $text_hover_dark: #f36259;
     .content {
         width: 100%;
         height: auto;
-        &:nth-child(2) {
-            p {
-                font-size: 3.7vw;
-            }
-        }
-        &:nth-child(3) {
-            p {
-                font-size: 15px;
-            }
-        }
+        font-size: 13px;
         &:nth-child(5) {
             img {
                 max-width: 100%;
@@ -260,6 +248,9 @@ $text_hover_dark: #f36259;
                 height: auto;
                 width: auto;
             }
+        }
+        .close {
+            scale: 0.8;
         }
     }
 }
