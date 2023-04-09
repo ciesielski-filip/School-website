@@ -203,7 +203,6 @@
     max-height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
-    scroll-behavior: smooth;
   }
   .content:nth-child(5) img {
     max-width: 100%;
@@ -212,12 +211,12 @@
     width: auto;
   }
   .content .close {
-    left: 20px;
+    left: 15px;
     margin-bottom: 20px;
     scale: 0.7;
   }
   .content::-webkit-scrollbar {
-    width: 1em;
+    width: 0.5em;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {

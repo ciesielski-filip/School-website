@@ -209,7 +209,6 @@ $text_hover_dark: #f36259;
         max-height: 100vh;
         overflow: scroll;
         overflow-x: hidden;
-        scroll-behavior: smooth;
         &:nth-child(5) {
             img {
                 max-width: 100%;
@@ -219,12 +218,12 @@ $text_hover_dark: #f36259;
             }
         }
         .close {
-            left: 20px;
+            left: 15px;
             margin-bottom: 20px;
             scale: 0.7;
         }
         &::-webkit-scrollbar {
-            width: 1em;
+            width: 0.5em;
         }
     }
 }
