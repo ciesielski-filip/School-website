@@ -162,6 +162,7 @@
 }
 
 .contactLink {
+  position: absolute;
   width: 300px;
   height: 110px;
   background-color: #f36259;
