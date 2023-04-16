@@ -19,3 +19,10 @@ block.forEach((block, index) => {
     toggleContent(block, contents[index], closes[index], blur, container)
 })
 
+
+const icon = document.querySelector(".icon1")
+const contactLink = document.querySelector(".contactLink1")
+icon.addEventListener("click", function() {
+    contactLink.classList.toggle("active_contactLink")
+    console.log("tak")
+})

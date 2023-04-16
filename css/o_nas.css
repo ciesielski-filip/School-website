@@ -154,21 +154,22 @@
   align-items: center;
 }
 
-.icon {
+.icon, .icon1 {
   width: 110px;
   height: 110px;
   background-color: aqua;
   border-radius: 50%;
 }
-.icon:hover ~ .contactLink {
-  width: 300px;
-}
 
-.contactLink {
+.contactLink, .contactLink1 {
   width: 200px;
   height: 110px;
   background-color: #f36259;
   transition: all 0.3s;
+}
+
+.active_contactLink {
+  width: 300px;
 }
 
 .span {
