@@ -148,7 +148,8 @@
   width: 100%;
   margin-top: 20px;
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.377);
+  background-color: #d8d6d6;
+  border-radius: 60px;
   display: flex;
   align-items: center;
 }

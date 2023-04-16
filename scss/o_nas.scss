@@ -156,7 +156,8 @@ $text_hover_dark: #f36259;
     width: 100%;
     margin-top: 20px;
     height: 120px;
-    background-color: rgba(0, 0, 0, 0.377);
+    background-color: $white_second;
+    border-radius: 60px;
     display: flex;
     align-items: center;
 }
