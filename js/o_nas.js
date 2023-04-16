@@ -10,13 +10,12 @@ function toggleContent(block, content, close, blur, container) {
         container.classList.remove("hide")
     })
 }
-
 const block = document.querySelectorAll(".block")
 const contents = document.querySelectorAll(".content")
 const closes = document.querySelectorAll(".close")
 const blur = document.querySelector(".blur")
 const container = document.querySelector(".container_cards")
-
 block.forEach((block, index) => {
     toggleContent(block, contents[index], closes[index], blur, container)
 })
+

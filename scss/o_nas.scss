@@ -166,12 +166,15 @@ $text_hover_dark: #f36259;
     height: 110px;
     background-color: aqua;
     border-radius: 50%;
+    &:hover ~ .contactLink{
+        width: 300px;
+    }
 }
 .contactLink {
-    position: absolute;
-    width: 300px;
+    width: 200px;
     height: 110px;
     background-color: #f36259;
+    transition: all 0.3s;
 }
 .span {
     display: block;
