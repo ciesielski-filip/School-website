@@ -154,14 +154,14 @@
   align-items: center;
 }
 
-.icon, .icon1 {
+.icon {
   width: 110px;
   height: 110px;
   background-color: aqua;
   border-radius: 50%;
 }
 
-.contactLink, .contactLink1 {
+.contactLink {
   width: 200px;
   height: 110px;
   background-color: #f36259;
