@@ -23,6 +23,7 @@ block.forEach((block, index) => {
 function toggleContact(icon, contactLink) {
     icon.addEventListener("click", function() {
         contactLink.classList.toggle("active_contactLink")
+        icon.classList.toggle("active_icon")
     })
 }
 const icons = document.querySelectorAll(".icon")
