@@ -31,3 +31,15 @@ const contactLinks = document.querySelectorAll(".contactLink")
 icons.forEach((icon, index) => {
     toggleContact(icon, contactLinks[index])
 })
+
+const copyPhone = document.querySelector(".copyPhone")
+copyPhone.addEventListener("click", function() {
+    const content = copyPhone.textContent
+    navigator.clipboard.writeText(content)
+})
+
+const copyMail = document.querySelector(".copyMail")
+copyMail.addEventListener("click", function() {
+    const content = copyMail.textContent
+    navigator.clipboard.writeText(content)
+})
