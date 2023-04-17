@@ -173,22 +173,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  margin-left: 200px;
 }
 
 .contactLink {
   z-index: 1;
   width: 0px;
   height: 110px;
-  background-color: #f36259;
+  border-radius: 0px 55px 55px 0px;
+  background-color: #ffffff;
   transition: all 0.3s;
+  margin-left: 100px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactLink a {
+  font-size: 20px;
 }
 
 .active_contactLink {
   width: 300px;
+  margin-left: 50px;
+  opacity: 1;
 }
 
 .active_icon {
-  margin-left: 0px;
+  margin-left: 150px;
 }
 
 .span {
