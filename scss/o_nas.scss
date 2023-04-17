@@ -224,9 +224,21 @@ $text_hover_dark: #f36259;
     margin-left: 400px;
     margin-bottom: 50px;
     z-index: 5;
+    opacity: 0;
 }
 .active-notification {
-    opacity: 0.5;
+    animation: show 1.5s forwards;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 .span {
     display: block;

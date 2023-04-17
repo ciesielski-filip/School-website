@@ -33,24 +33,27 @@ icons.forEach((icon, index) => {
 })
 
 
+//Wyskakujące okienko z informacją o skopiowaniu tekstu
+function notificationCopy(copy, notification) {
+    copy.addEventListener("click", function() {
+        notification.classList.toggle("active-notification")
+    })
+}
 const copyPhone = document.querySelector(".copyPhone")
+const notificationPhone = document.querySelector(".notificationPhone")
+notificationCopy(copyPhone, notificationPhone)
+
+const copyMail = document.querySelector(".copyMail")
+const notificationMail = document.querySelector(".notificationMail")
+notificationCopy(copyMail, notificationMail)
+
+
+//Funkcje odpowiadająca za kopiowanie tekstu 
 copyPhone.addEventListener("click", function() {
     const content = copyPhone.textContent
     navigator.clipboard.writeText(content)
 })
-const copyMail = document.querySelector(".copyMail")
 copyMail.addEventListener("click", function() {
     const content = copyMail.textContent
     navigator.clipboard.writeText(content)
 })
-
-
-function notificationCopy(copy, notification) {
-    copy.addEventListener("click", function() {
-        notification.classList.add("active-notification")
-        console.log("tak")
-    })
-}
-const copy = document.querySelector(".copyPhone")
-const notification = document.querySelector(".notificationPhone")
-notificationCopy(copy, notification)
