@@ -172,10 +172,13 @@ $text_hover_dark: #f36259;
     width: 110px;
     height: 110px;
     margin-left: 50px;
-    background-color: $dark_second;
+    background-color: $white_l;
     border-radius: 50%;
     transition: all 0.3s;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contactLink {
     z-index: 1;

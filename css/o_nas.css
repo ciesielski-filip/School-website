@@ -166,10 +166,13 @@
   width: 110px;
   height: 110px;
   margin-left: 50px;
-  background-color: #283141;
+  background-color: #ffffff;
   border-radius: 50%;
   transition: all 0.3s;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactLink {
