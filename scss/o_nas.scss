@@ -210,6 +210,20 @@ $text_hover_dark: #f36259;
 .active_icon {
     margin-left: 150px;
 }
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: aqua;
+    position: absolute;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    z-index: 5;
+}
 .span {
     display: block;
     position: absolute;
