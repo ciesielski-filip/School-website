@@ -191,13 +191,17 @@
   align-items: center;
 }
 .contactLink a {
-  font-size: 20px;
+  font-size: 0px;
+  cursor: pointer;
 }
 
 .active_contactLink {
   width: 300px;
   margin-left: 50px;
   opacity: 1;
+}
+.active_contactLink a {
+  font-size: 18px;
 }
 
 .active_icon {

@@ -195,13 +195,17 @@ $text_hover_dark: #f36259;
     justify-content: center;
     align-items: center;
     a {
-        font-size: 20px;
+        font-size: 0px;
+        cursor: pointer;
     }
 }
 .active_contactLink {
     width: 300px;
     margin-left: 50px;
     opacity: 1;
+    a {
+        font-size: 18px;
+    }
 }
 .active_icon {
     margin-left: 150px;
