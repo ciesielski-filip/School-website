@@ -32,14 +32,25 @@ icons.forEach((icon, index) => {
     toggleContact(icon, contactLinks[index])
 })
 
+
 const copyPhone = document.querySelector(".copyPhone")
 copyPhone.addEventListener("click", function() {
     const content = copyPhone.textContent
     navigator.clipboard.writeText(content)
 })
-
 const copyMail = document.querySelector(".copyMail")
 copyMail.addEventListener("click", function() {
     const content = copyMail.textContent
     navigator.clipboard.writeText(content)
 })
+
+
+function notificationCopy(copy, notification) {
+    copy.addEventListener("click", function() {
+        notification.classList.add("active-notification")
+        console.log("tak")
+    })
+}
+const copy = document.querySelector(".copyPhone")
+const notification = document.querySelector(".notificationPhone")
+notificationCopy(copy, notification)

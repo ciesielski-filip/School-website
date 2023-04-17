@@ -216,11 +216,16 @@
   height: 30px;
   padding: 10px;
   border-radius: 30px;
-  background-color: aqua;
+  background-color: #4a5568;
+  color: #ffffff;
   position: absolute;
   margin-left: 400px;
   margin-bottom: 50px;
   z-index: 5;
+}
+
+.active-notification {
+  opacity: 0.5;
 }
 
 .span {
