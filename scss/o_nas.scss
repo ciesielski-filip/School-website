@@ -335,6 +335,8 @@ $text_hover_dark: #f36259;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100px;
+        margin-bottom: 20px;
     }
     .text {
         width: 0px;
@@ -356,6 +358,7 @@ $text_hover_dark: #f36259;
     .contactLink {
         width: 0px;
         height: 0px;
+        margin-left: 0px;
     }
     .active_contactLink {
         border-radius: 50px;
@@ -419,5 +422,37 @@ $text_hover_dark: #f36259;
         &::-webkit-scrollbar {
             width: 0.5em;
         }
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    .text {
+        font-size: 0px;
+        height: 0px;
+        width: 0px;
+        opacity: 0;
+    }
+    .icon {
+        margin-left: 0px;
+    }
+    .active_icon {
+        margin-bottom: 70px;
+    }
+    .contactLink {
+        text-align: center;
+        margin-left: 0px;
+        height: 70px;
+        border-radius: 70px;
+    }
+    .active_contactLink {
+        margin-left: 0px;
+        margin-top: 90px;
+    }
+    .notification {
+        margin-left: 250px;
+        margin-top: 50px;
     }
 }
