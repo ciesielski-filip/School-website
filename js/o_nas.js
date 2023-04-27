@@ -57,3 +57,15 @@ copyMail.addEventListener("click", function() {
     const content = copyMail.textContent
     navigator.clipboard.writeText(content)
 })
+
+
+//Counter
+let counts = setInterval(update)
+let up = 0
+function update() {
+    let count = document.querySelector(".counter")
+    count.innerHTML = ++up
+    if(up === 1000) {
+        console.log("tak")
+    }
+}
