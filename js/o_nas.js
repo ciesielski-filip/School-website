@@ -60,12 +60,12 @@ copyMail.addEventListener("click", function() {
 
 
 //Counter
-let counts = setInterval(update)
-let up = 0
-function update() {
-    let count = document.querySelector(".counter")
-    count.innerHTML = ++up
-    if(up === 1000) {
-        console.log("tak")
-    }
-}
+// let counts = setInterval(update)
+// let up = 0
+// function update() {
+//     let count = document.querySelector(".counter")
+//     count.innerHTML = ++up
+//     if(up === 1000) {
+//         console.log("tak")
+//     }
+// }
