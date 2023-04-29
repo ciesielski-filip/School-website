@@ -60,12 +60,18 @@ copyMail.addEventListener("click", function() {
 
 
 //Counter
-// let counts = setInterval(update)
-// let up = 0
-// function update() {
-//     let count = document.querySelector(".counter")
-//     count.innerHTML = ++up
-//     if(up === 1000) {
-//         console.log("tak")
-//     }
-// }
+const counterBlock = document.querySelector(".counterBlock")
+
+counterBlock.addEventListener("click", function() {
+    const target = 1000
+    const counter = document.querySelector(".counter")
+    let count = 800 
+    
+    const interval = setInterval(() => {
+        count++
+        counter.innerHTML = count
+        if(count === target) {
+            clearInterval(interval)
+        }
+    }, 10)
+})
