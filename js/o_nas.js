@@ -63,15 +63,55 @@ copyMail.addEventListener("click", function() {
 const counterBlock = document.querySelector(".counterBlock")
 
 counterBlock.addEventListener("click", function() {
-    const target = 1000
-    const counter = document.querySelector(".counter")
-    let count = 800 
+    //Nauczyciele//
+    const target1 = 1000
+    const counter1 = document.querySelector(".counter1")
+    let count1 = 800 
     
-    const interval = setInterval(() => {
-        count++
-        counter.innerHTML = count
-        if(count === target) {
-            clearInterval(interval)
+    const interval1 = setInterval(() => {
+        count1++
+        counter1.innerHTML = count1
+        if(count1 === target1) {
+            clearInterval(interval1)
+        }
+    }, 10)
+
+    //Uczniowie//
+    const target2 = 1000
+    const counter2 = document.querySelector(".counter2")
+    let count2 = 800 
+    
+    const interval2 = setInterval(() => {
+        count2++
+        counter2.innerHTML = count2
+        if(count2 === target2) {
+            clearInterval(interval2)
+        }
+    }, 10)
+
+    //Absolwenci//
+    const target3 = 1000
+    const counter3 = document.querySelector(".counter3")
+    let count3 = 800 
+    
+    const interval3 = setInterval(() => {
+        count3++
+        counter3.innerHTML = count3
+        if(count3 === target3) {
+            clearInterval(interval3)
+        }
+    }, 10)
+
+    //Lata z nami//
+    const target4 = 1000
+    const counter4 = document.querySelector(".counter4")
+    let count4 = 800 
+    
+    const interval4 = setInterval(() => {
+        count4++
+        counter4.innerHTML = count4
+        if(count4 === target4) {
+            clearInterval(interval4)
         }
     }, 10)
 })
