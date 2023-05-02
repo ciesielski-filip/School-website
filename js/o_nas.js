@@ -76,41 +76,49 @@ counterBlock.addEventListener("click", function() {
     }, 10)
 
     //Uczniowie//
-    const target2 = 1000
-    const counter2 = document.querySelector(".counter2")
-    let count2 = 800 
+    setTimeout(() => {
+        const target2 = 1000
+        const counter2 = document.querySelector(".counter2")
+        let count2 = 800 
+        
+        const interval2 = setInterval(() => {
+            count2++
+            counter2.innerHTML = count2
+            if(count2 === target2) {
+                clearInterval(interval2)
+            }
+        }, 10)
+    }, 1000)
     
-    const interval2 = setInterval(() => {
-        count2++
-        counter2.innerHTML = count2
-        if(count2 === target2) {
-            clearInterval(interval2)
-        }
-    }, 10)
 
     //Absolwenci//
-    const target3 = 1000
-    const counter3 = document.querySelector(".counter3")
-    let count3 = 800 
-    
-    const interval3 = setInterval(() => {
-        count3++
-        counter3.innerHTML = count3
-        if(count3 === target3) {
-            clearInterval(interval3)
-        }
-    }, 10)
+    setTimeout(() => {
+        const target3 = 1000
+        const counter3 = document.querySelector(".counter3")
+        let count3 = 800 
+        
+        const interval3 = setInterval(() => {
+            count3++
+            counter3.innerHTML = count3
+            if(count3 === target3) {
+                clearInterval(interval3)
+            }
+        }, 10)  
+    }, 2000)
+
 
     //Lata z nami//
-    const target4 = 1000
-    const counter4 = document.querySelector(".counter4")
-    let count4 = 800 
-    
-    const interval4 = setInterval(() => {
-        count4++
-        counter4.innerHTML = count4
-        if(count4 === target4) {
-            clearInterval(interval4)
-        }
-    }, 10)
+    setTimeout(() => {
+        const target4 = 1000
+        const counter4 = document.querySelector(".counter4")
+        let count4 = 800 
+        
+        const interval4 = setInterval(() => {
+            count4++
+            counter4.innerHTML = count4
+            if(count4 === target4) {
+                clearInterval(interval4)
+            }
+        }, 10)
+    }, 3000)
 })
