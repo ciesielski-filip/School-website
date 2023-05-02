@@ -61,7 +61,6 @@ copyMail.addEventListener("click", function() {
 
 //Counter
 const counterBlock = document.querySelector(".counterBlock")
-
 counterBlock.addEventListener("click", function() {
     //Nauczyciele//
     const target1 = 1000
