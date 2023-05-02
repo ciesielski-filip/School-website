@@ -90,7 +90,6 @@ counterBlock.addEventListener("click", function() {
         }, 10)
     }, 1000)
     
-
     //Absolwenci//
     setTimeout(() => {
         const target3 = 1000
@@ -105,7 +104,6 @@ counterBlock.addEventListener("click", function() {
             }
         }, 10)  
     }, 2000)
-
 
     //Lata z nami//
     setTimeout(() => {
